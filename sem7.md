@@ -11,6 +11,16 @@ sudo ss -ntlp
 ll /etc/nginx
 nano /etc/nginx/nginx.conf
 
+nginx имеет формат настроек json
+apache2 имеет формат настроек xml
+
+проверка настройки файлов конфигурации nginx:
+> sudo nginx -t
+
+проверка настройки файлов конфигурации apache2:
+> sudo apachectl -t
+
+
 // применение конфигов (если меняем что-то)
 sudo systemctl reload nginx
 
